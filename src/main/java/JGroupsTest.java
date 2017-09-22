@@ -17,7 +17,7 @@ public class JGroupsTest extends ReceiverAdapter {
     private void start() throws Exception {
         channel = new JChannel("custom_tcp.xml");
         channel.setReceiver(this);
-        channel.connect("ChatCluster1");
+        channel.connect("jasper-sync");
         eventLoop();
         channel.close();
     }
